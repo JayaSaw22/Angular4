@@ -1,0 +1,27 @@
+<!-- <p>
+  grid works!
+</p> -->
+
+<h1>Angular Router</h1>
+<nav>
+  <a routerLink="/crisis-center" routerLinkActive="active">Crisis Center</a>
+  <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+</nav>
+<router-outlet></router-outlet>
+
+<div class = 'container' style =  'margin-top: 100px;'>
+  <div class = 'row'>
+    <table class = 'table table-striped' style = 'margin-bottom:50px;'>
+      <tr>
+        <th>Name</th>
+        <th>UserName</th>
+        <th>email</th>
+      </tr>
+      <tr *ngFor = 'let user of users'>
+        <td>{{user.name}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+      </tr>
+    </table>
+  </div>
+</div>
